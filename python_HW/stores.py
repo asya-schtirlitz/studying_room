@@ -14,7 +14,7 @@ def find_product(stores, product_name):
 	for store, shelves in stores.items():
 		for shelf, products in shelves.items():
 			if product_name in products:
-				return "Store: {0}, shelf: {1}".format(store, shelf)
+				return store, shelf
 	return None
 
 if __name__ == '__main__':
